@@ -2,14 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.soundjourney.top/friends/</loc>
-    <lastmod>2025-12-06T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://blog.soundjourney.top/post/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.soundjourney.top/about/</loc>
+    <loc>https://blog.soundjourney.top/about/contact/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.soundjourney.top/about/projects/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.soundjourney.top/about/techstack/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.soundjourney.top/about/skills/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.soundjourney.top/about/</loc>
   </url><url>
     <loc>https://blog.soundjourney.top/archives/</loc>
   </url><url>
@@ -18,6 +26,8 @@
     <loc>https://blog.soundjourney.top/disclaimer/</loc>
   </url><url>
     <loc>https://blog.soundjourney.top/search/</loc>
+  </url><url>
+    <loc>https://blog.soundjourney.top/friends/</loc>
   </url><url>
     <loc>https://blog.soundjourney.top/privacy-policy/</loc>
   </url><url>
