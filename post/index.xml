@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 宫程狮 - 记录技术与生活中的每一刻灵感</title>
+        <title>Posts on 宫程狮</title>
         <link>https://blog.soundjourney.top/post/</link>
-        <description>Recent content in Posts on 宫程狮 - 记录技术与生活中的每一刻灵感</description>
+        <description>Recent content in Posts on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.soundjourney.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -646,129 +646,13 @@
 &lt;/h2&gt;&lt;p&gt;对于低资源服务器的 TTS 需求，edge-tts 是一个非常好的选择，轻量、高质、易集成。&lt;/p&gt;</description>
         </item>
         <item>
-        <title>n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器</title>
-        <link>https://blog.soundjourney.top/archives/n8n%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5%E4%BD%93%E9%AA%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E6%96%B0%E9%80%89%E6%8B%A9%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%95%88%E7%8E%87%E5%88%A9%E5%99%A8/</link>
+        <title>dy-auto-comment</title>
+        <link>https://blog.soundjourney.top/archives/dy-auto-comment/</link>
         <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/archives/n8n%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5%E4%BD%93%E9%AA%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E6%96%B0%E9%80%89%E6%8B%A9%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%95%88%E7%8E%87%E5%88%A9%E5%99%A8/</guid>
-        <description>&lt;img src="https://blog.soundjourney.top/img/posts/n8n.png" alt="Featured image of post n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器" /&gt;&lt;p&gt;我的技术博客一直是分享技术心得的平台，但博客文章的发布和推广流程比较繁琐。本文分享使用n8n实现博客自动发布的实践经验。&lt;/p&gt;
-&lt;h2 id=&#34;项目背景&#34;&gt;项目背景
-&lt;/h2&gt;&lt;p&gt;我的技术博客(soundjourney.top)一直是我分享技术心得和经验的平台。但是，博客文章的发布和推广流程比较繁琐，需要手动编辑、排版、上传和发布，耗费了不少时间。&lt;/p&gt;
-&lt;p&gt;此外，我还想尝试利用AI技术自动生成博文，并将其发布到博客。因此，我需要一个能够整合各种工具和服务的自动化工作流平台，来实现博客文章的自动发布和AI-agent的集成。&lt;/p&gt;
-&lt;h2 id=&#34;技术实现&#34;&gt;技术实现
-&lt;/h2&gt;&lt;h3 id=&#34;1-n8n的下载与安装&#34;&gt;1. n8n的下载与安装
-&lt;/h3&gt;&lt;p&gt;n8n的安装非常简单，我选择了Docker方式进行安装，快速便捷，且方便管理。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --name n8n &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -p 5678:5678 &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -v n8n_data:/home/node/.n8n &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;WEBHOOK_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://n8n.soundjourney.top/ &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;GENERIC_TIMEZONE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Asia/Shanghai&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  docker.n8n.io/n8nio/n8n
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;2-博客文章自动发布实践&#34;&gt;2. 博客文章自动发布实践
-&lt;/h3&gt;&lt;p&gt;我使用n8n创建了一个工作流，流程如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;On form submission&lt;/strong&gt; (表单提交): 指定博文的关键内容，标题、关键词、大体内容&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AI-Agent&lt;/strong&gt; (Gemini): 调用Gemini API，根据设定的主题和关键词自动生成博文&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Markdown Editor&lt;/strong&gt;: 对AI生成的博文进行格式化处理&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Blog API&lt;/strong&gt; (自定义): 编写自定义的API接口，将博文内容发布到博客&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Telegram&lt;/strong&gt; (电报通知): 博文发布结果通过电报进行通知&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;3-ai-agent配置使用gemini&#34;&gt;3. AI-agent配置使用Gemini
-&lt;/h3&gt;&lt;p&gt;n8n与Gemini的集成非常方便，只需要配置API Key即可。我使用Gemini生成了多篇博文，质量还不错，只需稍作修改即可发布。&lt;/p&gt;
-&lt;h2 id=&#34;遇到的问题--解决方法&#34;&gt;遇到的问题 &amp;amp; 解决方法
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;: AI生成的博文内容不够完善，需要人工干预&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;: 优化Gemini的prompt，提供更详细的指令和关键词&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;: n8n节点配置复杂，需要一定的学习成本&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;: 参考官方文档和社区教程，善用n8n的模板功能&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;我的思考&#34;&gt;我的思考
-&lt;/h2&gt;&lt;p&gt;n8n作为自动化工作流平台，非常适合全栈开发者用来整合各种服务和工具，提升工作效率。&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>抖音、小红书自动评论助手授权码获取</title>
-        <link>https://blog.soundjourney.top/archives/%E6%8A%96%E9%9F%B3%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E6%8E%88%E6%9D%83%E7%A0%81%E8%8E%B7%E5%8F%96/</link>
-        <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.soundjourney.top/archives/%E6%8A%96%E9%9F%B3%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E6%8E%88%E6%9D%83%E7%A0%81%E8%8E%B7%E5%8F%96/</guid>
-        <description>&lt;img src="https://blog.soundjourney.top/img/posts/getLicense.png" alt="Featured image of post 抖音、小红书自动评论助手授权码获取" /&gt;&lt;p&gt;抖音、小红书自动评论助手授权码获取方式及使用说明。&lt;/p&gt;
-&lt;h2 id=&#34;获取授权码的方式&#34;&gt;获取授权码的方式
-&lt;/h2&gt;&lt;h3 id=&#34;1-添加qq好友&#34;&gt;1. 添加QQ好友
-&lt;/h3&gt;&lt;p&gt;扫描下方二维码，添加好友并备注：&lt;strong&gt;插件授权&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.soundjourney.top/img/posts/qq.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;QQ二维码&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2-支付费用&#34;&gt;2. 支付费用
-&lt;/h3&gt;&lt;p&gt;支付方式可通过添加QQ，获取支付宝、微信收款二维码完成&lt;/p&gt;
-&lt;h3 id=&#34;3-获取授权码&#34;&gt;3. 获取授权码
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;完成支付后，我会在 &lt;strong&gt;24 小时内&lt;/strong&gt; 将唯一授权码发送给您&lt;/li&gt;
-&lt;li&gt;授权码为 &lt;strong&gt;永久有效&lt;/strong&gt;，仅供本设备使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;使用方法&#34;&gt;使用方法
-&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;打开插件 → 弹出授权输入界面&lt;/li&gt;
-&lt;li&gt;输入您收到的授权码&lt;/li&gt;
-&lt;li&gt;点击 &amp;ldquo;验证&amp;rdquo; → 如果成功，即可解锁插件所有功能&lt;/li&gt;
-&lt;li&gt;插件会在本地保存授权状态，下次无需再次输入&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;注意事项&#34;&gt;注意事项
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;授权码为唯一识别码，请妥善保管，不要随意分享&lt;/li&gt;
-&lt;li&gt;本插件仅供学习和个人使用，请勿用于违规行为&lt;/li&gt;
-&lt;li&gt;支付完成后如遇授权码未收到或验证失败，请及时联系QQ客服&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;联系方式&#34;&gt;联系方式
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;QQ&lt;/strong&gt;：172990168&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;172990168
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;感谢您的支持！通过购买授权码，您不仅可以获得完整功能，还能帮助插件持续更新和优化体验。&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>抖音自动评论助手下载安装使用</title>
-        <link>https://blog.soundjourney.top/archives/%E6%8A%96%E9%9F%B3%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
-        <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://blog.soundjourney.top/archives/%E6%8A%96%E9%9F%B3%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
-        <description>&lt;img src="https://blog.soundjourney.top/img/posts/dy-auto-comment.png" alt="Featured image of post 抖音自动评论助手下载安装使用" /&gt;&lt;p&gt;抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。&lt;/p&gt;
+        <guid>https://blog.soundjourney.top/archives/dy-auto-comment/</guid>
+        <description>&lt;img src="https://blog.soundjourney.top/img/posts/dy-auto-comment.png" alt="Featured image of post dy-auto-comment" /&gt;&lt;h1 id=&#34;抖音自动评论助手下载安装使用&#34;&gt;抖音自动评论助手下载安装使用
+&lt;/h1&gt;&lt;p&gt;抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。&lt;/p&gt;
 &lt;h2 id=&#34;1-插件简介&#34;&gt;1. 插件简介
 &lt;/h2&gt;&lt;p&gt;抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。支持多种评论模式，包括表情回复、文本回复和AI智能回复，帮助用户提高在抖音平台的互动效率。&lt;/p&gt;
 &lt;h2 id=&#34;2-功能特性&#34;&gt;2. 功能特性
@@ -915,12 +799,130 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;p&gt;用户不得利用本软件从事任何违法违规行为，包括但不限于垃圾评论、恶意营销、侵犯他人合法权益等。用户行为与本软件开发者无关，责任由用户自行承担。&lt;/p&gt;</description>
         </item>
         <item>
-        <title>小红书自动评论助手下载安装使用</title>
-        <link>https://blog.soundjourney.top/archives/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+        <title>getLicense</title>
+        <link>https://blog.soundjourney.top/archives/getlicense/</link>
         <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/archives/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
-        <description>&lt;img src="https://blog.soundjourney.top/img/posts/xhs-auto-comment.png" alt="Featured image of post 小红书自动评论助手下载安装使用" /&gt;&lt;p&gt;小红书自动评论助手是一款浏览器扩展插件，可帮助用户在小红书平台上自动进行评论互动。&lt;/p&gt;
+        <guid>https://blog.soundjourney.top/archives/getlicense/</guid>
+        <description>&lt;img src="https://blog.soundjourney.top/img/posts/getLicense.png" alt="Featured image of post getLicense" /&gt;&lt;h1 id=&#34;抖音小红书自动评论助手授权码获取方式及使用说明&#34;&gt;抖音、小红书自动评论助手授权码获取方式及使用说明
+&lt;/h1&gt;&lt;h2 id=&#34;获取授权码的方式&#34;&gt;获取授权码的方式
+&lt;/h2&gt;&lt;h3 id=&#34;1-添加qq好友&#34;&gt;1. 添加QQ好友
+&lt;/h3&gt;&lt;p&gt;扫描下方二维码，添加好友并备注：&lt;strong&gt;插件授权&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.soundjourney.top/img/posts/qq.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;QQ二维码&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-支付费用&#34;&gt;2. 支付费用
+&lt;/h3&gt;&lt;p&gt;支付方式可通过添加QQ，获取支付宝、微信收款二维码完成&lt;/p&gt;
+&lt;h3 id=&#34;3-获取授权码&#34;&gt;3. 获取授权码
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;完成支付后，我会在 &lt;strong&gt;24 小时内&lt;/strong&gt; 将唯一授权码发送给您&lt;/li&gt;
+&lt;li&gt;授权码为 &lt;strong&gt;永久有效&lt;/strong&gt;，仅供本设备使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开插件 → 弹出授权输入界面&lt;/li&gt;
+&lt;li&gt;输入您收到的授权码&lt;/li&gt;
+&lt;li&gt;点击 &amp;ldquo;验证&amp;rdquo; → 如果成功，即可解锁插件所有功能&lt;/li&gt;
+&lt;li&gt;插件会在本地保存授权状态，下次无需再次输入&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;授权码为唯一识别码，请妥善保管，不要随意分享&lt;/li&gt;
+&lt;li&gt;本插件仅供学习和个人使用，请勿用于违规行为&lt;/li&gt;
+&lt;li&gt;支付完成后如遇授权码未收到或验证失败，请及时联系QQ客服&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;联系方式
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;QQ&lt;/strong&gt;：172990168&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;172990168
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;感谢您的支持！通过购买授权码，您不仅可以获得完整功能，还能帮助插件持续更新和优化体验。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器</title>
+        <link>https://blog.soundjourney.top/archives/n8n%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5%E4%BD%93%E9%AA%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E6%96%B0%E9%80%89%E6%8B%A9%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%95%88%E7%8E%87%E5%88%A9%E5%99%A8/</link>
+        <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/archives/n8n%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5%E4%BD%93%E9%AA%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E6%96%B0%E9%80%89%E6%8B%A9%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%95%88%E7%8E%87%E5%88%A9%E5%99%A8/</guid>
+        <description>&lt;img src="https://blog.soundjourney.top/img/posts/n8n.png" alt="Featured image of post n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器" /&gt;&lt;p&gt;我的技术博客一直是分享技术心得的平台，但博客文章的发布和推广流程比较繁琐。本文分享使用n8n实现博客自动发布的实践经验。&lt;/p&gt;
+&lt;h2 id=&#34;项目背景&#34;&gt;项目背景
+&lt;/h2&gt;&lt;p&gt;我的技术博客(soundjourney.top)一直是我分享技术心得和经验的平台。但是，博客文章的发布和推广流程比较繁琐，需要手动编辑、排版、上传和发布，耗费了不少时间。&lt;/p&gt;
+&lt;p&gt;此外，我还想尝试利用AI技术自动生成博文，并将其发布到博客。因此，我需要一个能够整合各种工具和服务的自动化工作流平台，来实现博客文章的自动发布和AI-agent的集成。&lt;/p&gt;
+&lt;h2 id=&#34;技术实现&#34;&gt;技术实现
+&lt;/h2&gt;&lt;h3 id=&#34;1-n8n的下载与安装&#34;&gt;1. n8n的下载与安装
+&lt;/h3&gt;&lt;p&gt;n8n的安装非常简单，我选择了Docker方式进行安装，快速便捷，且方便管理。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --name n8n &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -p 5678:5678 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -v n8n_data:/home/node/.n8n &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;WEBHOOK_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://n8n.soundjourney.top/ &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;GENERIC_TIMEZONE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Asia/Shanghai&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  docker.n8n.io/n8nio/n8n
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;2-博客文章自动发布实践&#34;&gt;2. 博客文章自动发布实践
+&lt;/h3&gt;&lt;p&gt;我使用n8n创建了一个工作流，流程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;On form submission&lt;/strong&gt; (表单提交): 指定博文的关键内容，标题、关键词、大体内容&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI-Agent&lt;/strong&gt; (Gemini): 调用Gemini API，根据设定的主题和关键词自动生成博文&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown Editor&lt;/strong&gt;: 对AI生成的博文进行格式化处理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blog API&lt;/strong&gt; (自定义): 编写自定义的API接口，将博文内容发布到博客&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Telegram&lt;/strong&gt; (电报通知): 博文发布结果通过电报进行通知&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-ai-agent配置使用gemini&#34;&gt;3. AI-agent配置使用Gemini
+&lt;/h3&gt;&lt;p&gt;n8n与Gemini的集成非常方便，只需要配置API Key即可。我使用Gemini生成了多篇博文，质量还不错，只需稍作修改即可发布。&lt;/p&gt;
+&lt;h2 id=&#34;遇到的问题--解决方法&#34;&gt;遇到的问题 &amp;amp; 解决方法
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;: AI生成的博文内容不够完善，需要人工干预&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;: 优化Gemini的prompt，提供更详细的指令和关键词&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;: n8n节点配置复杂，需要一定的学习成本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;解决方法&lt;/strong&gt;: 参考官方文档和社区教程，善用n8n的模板功能&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;我的思考&#34;&gt;我的思考
+&lt;/h2&gt;&lt;p&gt;n8n作为自动化工作流平台，非常适合全栈开发者用来整合各种服务和工具，提升工作效率。&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>xhs-auto-comment</title>
+        <link>https://blog.soundjourney.top/archives/xhs-auto-comment/</link>
+        <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/archives/xhs-auto-comment/</guid>
+        <description>&lt;img src="https://blog.soundjourney.top/img/posts/xhs-auto-comment.png" alt="Featured image of post xhs-auto-comment" /&gt;&lt;h1 id=&#34;小红书自动评论助手下载安装使用&#34;&gt;小红书自动评论助手下载安装使用
+&lt;/h1&gt;&lt;p&gt;小红书自动评论助手是一款浏览器扩展插件，可帮助用户在小红书平台上自动进行评论互动。&lt;/p&gt;
 &lt;h2 id=&#34;1-插件简介&#34;&gt;1. 插件简介
 &lt;/h2&gt;&lt;p&gt;小红书自动评论助手是一款浏览器扩展插件，可帮助用户在小红书平台上自动进行评论互动。该插件支持多种评论模式，包括表情回复、文本回复和AI智能回复，能够显著提升用户在小红书平台上的互动效率。&lt;/p&gt;
 &lt;h2 id=&#34;2-功能特性&#34;&gt;2. 功能特性

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>About on 宫程狮 - 记录技术与生活中的每一刻灵感</title>
-        <link>https://blog.soundjourney.top/about/</link>
-        <description>Recent content in About on 宫程狮 - 记录技术与生活中的每一刻灵感</description>
+        <title>About on 宫程狮</title>
+        <link>http://localhost:1313/about/</link>
+        <description>Recent content in About on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.soundjourney.top/about/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>📫 联系方式</title>
-        <link>https://blog.soundjourney.top/about/contact/</link>
+        <link>http://localhost:1313/about/contact/</link>
         <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/about/contact/</guid>
+        <guid>http://localhost:1313/about/contact/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;📧 邮箱：&lt;a class=&#34;link&#34; href=&#34;mailto:gongjunhao@sina.com&#34; &gt;gongjunhao@sina.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;💬 GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -23,10 +23,10 @@
         </item>
         <item>
         <title>🚀 开源项目</title>
-        <link>https://blog.soundjourney.top/about/projects/</link>
+        <link>http://localhost:1313/about/projects/</link>
         <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/about/projects/</guid>
+        <guid>http://localhost:1313/about/projects/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;🔹 &lt;a class=&#34;link&#34; href=&#34;https://www.soundjourney.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;SoundJourney&lt;/a&gt; - 景音随行，旅游语音导览小程序&lt;/li&gt;
@@ -39,10 +39,10 @@
         </item>
         <item>
         <title>技术栈</title>
-        <link>https://blog.soundjourney.top/about/techstack/</link>
+        <link>http://localhost:1313/about/techstack/</link>
         <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/about/techstack/</guid>
+        <guid>http://localhost:1313/about/techstack/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;后端&lt;/strong&gt;：Java / Spring Boot / Spring Cloud / MyBatis&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;前端&lt;/strong&gt;：Vue / React / AngularJS&lt;/li&gt;
@@ -54,10 +54,10 @@
         </item>
         <item>
         <title>我的专长</title>
-        <link>https://blog.soundjourney.top/about/skills/</link>
+        <link>http://localhost:1313/about/skills/</link>
         <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.soundjourney.top/about/skills/</guid>
+        <guid>http://localhost:1313/about/skills/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;企业级系统设计与重构&lt;/li&gt;
 &lt;li&gt;分布式架构与微服务治理&lt;/li&gt;
