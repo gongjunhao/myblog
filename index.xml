@@ -6,7 +6,76 @@
         <description>Recent content on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.soundjourney.top/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.soundjourney.top/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>友情链接</title>
+        <link>https://blog.soundjourney.top/friends/</link>
+        <pubDate>Sat, 06 Dec 2025 00:00:00 +0800</pubDate>
+        
+        <guid>https://blog.soundjourney.top/friends/</guid>
+        <description>&lt;p&gt;以下是一些优秀的技术博客和资源推荐，欢迎大家访问交流。&lt;/p&gt;
+&lt;h2 id=&#34;友情链接列表&#34;&gt;友情链接列表
+&lt;/h2&gt;&lt;h3 id=&#34;技术类博客&#34;&gt;技术类博客
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.liaoxuefeng.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;廖雪峰的官方网站&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;专注于技术教程，涵盖Python、Git、JavaScript等内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ruanyifeng.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;阮一峰的网络日志&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知名技术博主，内容涵盖ES6、网络协议、前端技术等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://tech.meituan.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;美团技术团队&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;美团技术团队官方博客，分享一线技术实践和架构设计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;开发者资源&#34;&gt;开发者资源
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全球最大的代码托管平台，开源项目的聚集地&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack Overflow&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;程序员问答社区，解决编程问题的好帮手&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MDN Web Docs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mozilla开发者网络，权威的前端技术文档&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;友情链接申请&#34;&gt;友情链接申请
+&lt;/h2&gt;&lt;p&gt;如果您也有技术相关的博客或网站，欢迎申请友情链接。请联系我们并提供以下信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网站名称&lt;/li&gt;
+&lt;li&gt;网站地址&lt;/li&gt;
+&lt;li&gt;简短描述（50字以内）&lt;/li&gt;
+&lt;li&gt;联系方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们会尽快审核并回复您的申请。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; 我们只收录与技术相关、内容优质、更新频繁的网站，不接受含有违法违规内容的网站。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>提升效率的秘密武器：浏览器自动化工具与抖音/小红书自动评论助手实战分享</title>
         <link>https://blog.soundjourney.top/archives/%E6%8F%90%E5%8D%87%E6%95%88%E7%8E%87%E7%9A%84%E7%A7%98%E5%AF%86%E6%AD%A6%E5%99%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%96%E9%9F%B3/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%87%AA%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%8A%A9%E6%89%8B%E5%AE%9E%E6%88%98%E5%88%86%E4%BA%AB/</link>
         <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
@@ -2092,7 +2161,7 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;/h2&gt;&lt;h3 id=&#34;邮箱&#34;&gt;邮箱
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;个人邮箱&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;mailto:gongjunhao@sina.com&#34; &gt;gongjunhao@sina.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;技术咨询&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;mailto:gongjunhao@sina.com&#34; &gt;gongjunhao@sina.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术咨询&lt;/strong&gt;：QQ: 172990168&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;社交平台&#34;&gt;社交平台
 &lt;/h3&gt;&lt;ul&gt;
