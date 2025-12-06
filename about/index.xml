@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>About on 宫程狮</title>
+        <link>https://blog.soundjourney.top/about/</link>
+        <description>Recent content in About on 宫程狮</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.soundjourney.top/about/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>📫 联系方式</title>
+        <link>https://blog.soundjourney.top/about/contact/</link>
+        <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/about/contact/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;📧 邮箱：&lt;a class=&#34;link&#34; href=&#34;mailto:gongjunhao@sina.com&#34; &gt;gongjunhao@sina.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gongjunhao&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🌐 博客：&lt;a class=&#34;link&#34; href=&#34;https://blog.soundjourney.top/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;宫程狮&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>🚀 开源项目</title>
+        <link>https://blog.soundjourney.top/about/projects/</link>
+        <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/about/projects/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;🔹 &lt;a class=&#34;link&#34; href=&#34;https://www.soundjourney.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SoundJourney&lt;/a&gt; - 景音随行，旅游语音导览小程序&lt;/li&gt;
+&lt;li&gt;🔹 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao/seckill&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Seckill&lt;/a&gt; - Chrome 秒杀助手插件&lt;/li&gt;
+&lt;li&gt;🔹 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao/cookie-extraction&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cookie Extraction&lt;/a&gt; - Cookies 提取工具&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>技术栈</title>
+        <link>https://blog.soundjourney.top/about/techstack/</link>
+        <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/about/techstack/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;后端&lt;/strong&gt;：Java / Spring Boot / Spring Cloud / MyBatis&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前端&lt;/strong&gt;：Vue / React / AngularJS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中间件&lt;/strong&gt;：Redis / RabbitMQ / Kafka / Nginx&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运维&lt;/strong&gt;：Docker / Linux / K8s / Jenkins&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库&lt;/strong&gt;：MySQL / Oracle / HBase&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>我的专长</title>
+        <link>https://blog.soundjourney.top/about/skills/</link>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.soundjourney.top/about/skills/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;企业级系统设计与重构&lt;/li&gt;
+&lt;li&gt;分布式架构与微服务治理&lt;/li&gt;
+&lt;li&gt;高并发、高可用系统建设&lt;/li&gt;
+&lt;li&gt;数据建模与系统性能优化&lt;/li&gt;
+&lt;li&gt;跨部门协作与技术团队管理&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
