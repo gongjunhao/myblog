@@ -1,0 +1,115 @@
+/* 自定义样式 - 适配亮色背景图的深色文字 */
+
+/* 全局字体配置 */
+body {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 头部导航栏文字颜色 */
+.navbar-default .navbar-brand {
+    color: #333 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 页面标题文字颜色 */
+.page-heading {
+    color: #333 !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 首页副标题文字颜色 */
+.site-heading .subheading {
+    color: #333 !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 文章卡片标题颜色 */
+.post-preview .post-title {
+    color: #333 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 文章元信息颜色 */
+.post-preview .post-meta {
+    color: #555 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 侧边栏标题颜色 */
+.sidebar-heading {
+    color: #333 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 链接颜色（深色主题下使用深色链接） */
+a {
+    color: #1a73e8;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+a:hover, a:focus {
+    color: #0d47a1;
+}
+
+/* 页脚文字颜色 */
+footer {
+    color: #333 !important;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 文章内容区域字体 */
+.article-entry {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 代码块字体 */
+code {
+    font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", "Consolas", "Courier New", monospace !important;
+}
+
+/* 标题字体 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 按钮字体 */
+.btn {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 文章内容和段落 */
+p {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 列表项 */
+li {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 引用块 */
+blockquote {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 表格内容 */
+table {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 侧边栏内容 */
+.sidebar {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
+
+/* 搜索框 */
+input[type="text"], input[type="search"] {
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", sans-serif !important;
+}
