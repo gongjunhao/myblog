@@ -192,7 +192,7 @@
 &lt;h2 id=&#34;3-安装指南&#34;&gt;3. 安装指南
 &lt;/h2&gt;&lt;h3 id=&#34;31-chrome浏览器安装步骤&#34;&gt;3.1 Chrome浏览器安装步骤
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;下载插件压缩包并解压：&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/uploads/products/product_4/resources/20251210/1765378103_xhs-v1.3.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;下载插件压缩包并解压：&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;xhs.zip&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;打开Chrome浏览器，访问 &lt;code&gt;chrome://extensions/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;开启右上角&amp;quot;开发者模式&amp;quot;&lt;/li&gt;
@@ -329,7 +329,8 @@
 &lt;h2 id=&#34;3-安装与授权&#34;&gt;3. 安装与授权
 &lt;/h2&gt;&lt;h3 id=&#34;31-安装步骤&#34;&gt;3.1 安装步骤
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;下载插件安装包：&lt;a class=&#34;link&#34; href=&#34;https://blog.devstorex.top/upload/app.zip&#34; &gt;app.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载插件安装包：&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;app.zip&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;打开Chrome浏览器，进入扩展程序管理页面（&lt;code&gt;chrome://extensions/&lt;/code&gt;）&lt;/li&gt;
 &lt;li&gt;启用&amp;quot;开发者模式&amp;quot;&lt;/li&gt;
 &lt;li&gt;点击&amp;quot;加载已解压的扩展程序&amp;quot;，选择插件文件夹&lt;/li&gt;
@@ -1688,7 +1689,8 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;/ul&gt;
 &lt;h2 id=&#34;安装方法&#34;&gt;安装方法
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;下载本项目的所有文件&lt;/li&gt;
+&lt;li&gt;下载本项目的所有文件&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载地址&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;打开Chrome浏览器，进入扩展管理页面 (chrome://extensions/)&lt;/li&gt;
 &lt;li&gt;开启右上角的「开发者模式」&lt;/li&gt;
 &lt;li&gt;点击「加载已解压的扩展程序」&lt;/li&gt;
