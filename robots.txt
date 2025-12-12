@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.soundjourney.top/sitemap.xml
+Sitemap: https://blog.devstorex.top/sitemap.xml

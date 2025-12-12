@@ -1097,7 +1097,7 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
         <guid>https://blog.devstorex.top/archives/n8n%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%AE%9E%E8%B7%B5%E4%BD%93%E9%AA%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E6%96%B0%E9%80%89%E6%8B%A9%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%95%88%E7%8E%87%E5%88%A9%E5%99%A8/</guid>
         <description>&lt;img src="https://blog.devstorex.top/img/posts/n8n.png" alt="Featured image of post n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器" /&gt;&lt;p&gt;我的技术博客一直是分享技术心得的平台，但博客文章的发布和推广流程比较繁琐。本文分享使用n8n实现博客自动发布的实践经验。&lt;/p&gt;
 &lt;h2 id=&#34;项目背景&#34;&gt;项目背景
-&lt;/h2&gt;&lt;p&gt;我的技术博客(soundjourney.top)一直是我分享技术心得和经验的平台。但是，博客文章的发布和推广流程比较繁琐，需要手动编辑、排版、上传和发布，耗费了不少时间。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;我的技术博客(devstorex.top)一直是我分享技术心得和经验的平台。但是，博客文章的发布和推广流程比较繁琐，需要手动编辑、排版、上传和发布，耗费了不少时间。&lt;/p&gt;
 &lt;p&gt;此外，我还想尝试利用AI技术自动生成博文，并将其发布到博客。因此，我需要一个能够整合各种工具和服务的自动化工作流平台，来实现博客文章的自动发布和AI-agent的集成。&lt;/p&gt;
 &lt;h2 id=&#34;技术实现&#34;&gt;技术实现
 &lt;/h2&gt;&lt;h3 id=&#34;1-n8n的下载与安装&#34;&gt;1. n8n的下载与安装
@@ -1117,7 +1117,7 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --name n8n &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -p 5678:5678 &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -v n8n_data:/home/node/.n8n &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;WEBHOOK_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://n8n.soundjourney.top/ &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;WEBHOOK_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://n8n.devstorex.top/ &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -e &lt;span class=&#34;nv&#34;&gt;GENERIC_TIMEZONE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Asia/Shanghai&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  docker.n8n.io/n8nio/n8n
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -1337,7 +1337,7 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;宫程狮&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://blog.soundjourney.top/&lt;/span&gt;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;宫程狮&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://blog.devstorex.top/&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;logo&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;图片链接&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
