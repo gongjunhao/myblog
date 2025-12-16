@@ -6,7 +6,64 @@
         <description>Recent content in Posts on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 12 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>告别重复劳动：鱼泡自动化 Chrome 扩展，如何让你的招聘效率提升 300%</title>
+        <link>https://blog.devstorex.top/archives/%E5%91%8A%E5%88%AB%E9%87%8D%E5%A4%8D%E5%8A%B3%E5%8A%A8%E9%B1%BC%E6%B3%A1%E8%87%AA%E5%8A%A8%E5%8C%96-chrome-%E6%89%A9%E5%B1%95%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E6%8B%9B%E8%81%98%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87-300/</link>
+        <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.devstorex.top/archives/%E5%91%8A%E5%88%AB%E9%87%8D%E5%A4%8D%E5%8A%B3%E5%8A%A8%E9%B1%BC%E6%B3%A1%E8%87%AA%E5%8A%A8%E5%8C%96-chrome-%E6%89%A9%E5%B1%95%E5%A6%82%E4%BD%95%E8%AE%A9%E4%BD%A0%E7%9A%84%E6%8B%9B%E8%81%98%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87-300/</guid>
+        <description>&lt;img src="https://blog.devstorex.top/img/posts/yupao.png" alt="Featured image of post 告别重复劳动：鱼泡自动化 Chrome 扩展，如何让你的招聘效率提升 300%" /&gt;&lt;p&gt;在效率内卷的时代，你还在手动刷新职位吗？&lt;/p&gt;
+&lt;p&gt;在竞争激烈的招聘市场中，每一秒的响应速度都可能决定你是否能抢到最优秀的人才。如果你还在手动刷新职位、机械复制粘贴回复、或者眼睛盯屏大海捞针式筛选简历，那么你可能正在被效率低下所淘汰。&lt;/p&gt;
+&lt;p&gt;今天，我们正式推出专为鱼泡直聘招聘后台设计的——鱼泡自动化 Chrome 扩展。这不是一个简单的脚本，而是一个集成了 AI、任务调度和人类行为模拟技术的智能招聘助理。&lt;/p&gt;
+&lt;h2 id=&#34;一你的痛点就是我们的起点&#34;&gt;一、你的痛点，就是我们的起点
+&lt;/h2&gt;&lt;p&gt;传统的招聘工作在鱼泡直聘平台上面临三大高频痛点：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;职位曝光低：&lt;/strong&gt; 职位排名靠前依赖频繁的刷新操作，耗费大量人力和时间。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;消息回复慢：&lt;/strong&gt; 大量重复性的新消息需要即时处理，回复模板切换繁琐，容易错过&amp;quot;牛人&amp;quot;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;筛选效率低：&lt;/strong&gt; 人才库庞大，手动按条件筛选再打招呼，效率极其低下。&lt;/p&gt;
+&lt;h2 id=&#34;二核心功能揭秘三大自动化任务解放你的双手&#34;&gt;二、核心功能揭秘：三大自动化任务解放你的双手
+&lt;/h2&gt;&lt;p&gt;我们的扩展程序将这三大痛点转化为高度自动化的解决方案：&lt;/p&gt;
+&lt;h3 id=&#34;1--职位刷新任务全天候高曝光保障&#34;&gt;1. ⚡ 职位刷新任务：全天候高曝光保障
+&lt;/h3&gt;&lt;p&gt;告别机械点击！您只需设置刷新间隔和次数，扩展程序将模拟真人行为（随机延迟）自动刷新您发布的职位。保证您的职位信息始终处于高位，为您带来持续的流量和曝光。&lt;/p&gt;
+&lt;h3 id=&#34;2--智能回复任务ai-加持的秒级响应&#34;&gt;2. 🤖 智能回复任务：AI 加持的秒级响应
+&lt;/h3&gt;&lt;p&gt;这是我们最强大的功能之一。系统会定期遍历所有新消息，并根据配置自动回复：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;固定模板模式：&lt;/strong&gt; 快速回复常见问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AI 生成模式：&lt;/strong&gt; 集成 DeepSeek、Kimi、OpenAI、Gemini 等主流 AI 模型，您可以配置 AI 根据聊天上下文生成更个性化、更专业的回复。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;高效转化：&lt;/strong&gt; 支持自动交换微信联系方式，将高质量线索快速引导到私域。&lt;/p&gt;
+&lt;h3 id=&#34;3--找牛人任务精准筛选批量触达&#34;&gt;3. 🎯 找牛人任务：精准筛选，批量触达
+&lt;/h3&gt;&lt;p&gt;系统根据您预设的筛选条件（如：刚刚在线、3天内活跃、经验、学历等）在人才库中自动寻找匹配的候选人。找到后，扩展程序会自动发送打招呼消息，确保您不错过任何一个潜力牛人。&lt;/p&gt;
+&lt;h2 id=&#34;三超越自动化的技术壁垒安全与智能并重&#34;&gt;三、超越自动化的技术壁垒：安全与智能并重
+&lt;/h2&gt;&lt;p&gt;为什么我们的扩展程序与其他简单的脚本不同？因为我们把安全和智能放到了第一位：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🤖 人类行为模拟：&lt;/strong&gt; 我们内嵌了随机延迟和鼠标轨迹模拟技术。这意味着系统执行任务时，更像一个&amp;quot;真人&amp;quot;在操作，极大地降低了被平台反爬机制检测的风险。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🔒 数据隐私至上：&lt;/strong&gt; 所有配置、授权状态和日志数据都存储在您的本地浏览器中，我们不收集、不上传任何您的核心数据，充分保障您的隐私和商业机密。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;📅 智能任务调度：&lt;/strong&gt; 基于 Cron 表达式和优先级调度，您可以精确控制不同任务的执行时间，实现资源的最优化利用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🔑 授权管理系统：&lt;/strong&gt; 确保扩展程序的安全和正版化使用。&lt;/p&gt;
+&lt;h2 id=&#34;四快速上手开始你的自动化招聘之旅&#34;&gt;四、快速上手：开始你的自动化招聘之旅
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开 Chrome 浏览器，进入 &lt;code&gt;chrome://extensions/&lt;/code&gt; 开启&amp;quot;开发者模式&amp;quot;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击&amp;quot;加载已解压的扩展程序&amp;quot;，导入项目的 dist 目录。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;首次使用：&lt;/strong&gt; 点击扩展图标，输入有效的授权码进行授权验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置任务：&lt;/strong&gt; 在弹窗中设置职位刷新间隔、回复模式、找牛人筛选条件等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置完成后，点击保存，您的招聘助理将立即开始工作！您可以通过悬浮面板实时查看任务状态和执行进度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;/h2&gt;&lt;p&gt;招聘效率的提升是降本增效的关键。鱼泡自动化 Chrome 扩展旨在通过先进的技术，将招聘者从繁琐、重复的体力劳动中彻底解放出来，让您有更多时间去专注于核心的人才判断和面试环节。&lt;/p&gt;
+&lt;p&gt;告别手动操作，迎接智能招聘的新时代！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;获取方式：&lt;/strong&gt; 访问我们的下载中心获取最新版本及授权指南：[链接到您的下载中心地址]&lt;/p&gt;
+&lt;p&gt;#鱼泡直聘 #Chrome扩展 #招聘效率 #自动化工具&lt;/p&gt;</description>
+        </item>
+        <item>
         <title>博客迁移记：从Halo到Hugo的静态化转型之路</title>
         <link>https://blog.devstorex.top/archives/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%AE%B0%E4%BB%8Ehalo%E5%88%B0hugo%E7%9A%84%E9%9D%99%E6%80%81%E5%8C%96%E8%BD%AC%E5%9E%8B%E4%B9%8B%E8%B7%AF/</link>
         <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
