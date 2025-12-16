@@ -2203,6 +2203,80 @@ A: 适当增加评论间隔时间，避免频繁操作触发平台限制。&lt;/
 &lt;p&gt;期待在新博客上分享更多技术内容！&lt;/p&gt;</description>
         </item>
         <item>
+        <title>关于我</title>
+        <link>https://blog.devstorex.top/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.devstorex.top/about/</guid>
+        <description>&lt;h3 id=&#34;-关于我宫程狮&#34;&gt;👤 关于我（宫程狮）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;经验&lt;/strong&gt;：拥有十多年软件开发经验，专注于企业级应用研发，熟悉从单体架构到微服务架构的演进。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;角色&lt;/strong&gt;：曾在多个核心系统中担任开发或架构角色，具备扎实的编码能力和系统设计思维。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-我的专长&#34;&gt;🎯 我的专长
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;企业级系统设计与重构&lt;/li&gt;
+&lt;li&gt;分布式架构与微服务治理&lt;/li&gt;
+&lt;li&gt;高并发、高可用系统建设&lt;/li&gt;
+&lt;li&gt;数据建模与系统性能优化&lt;/li&gt;
+&lt;li&gt;跨部门协作与技术团队管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-技术栈&#34;&gt;💻 技术栈
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;后端&lt;/strong&gt;：Java / Spring Boot / Spring Cloud / MyBatis / Dubbo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前端&lt;/strong&gt;：Vue / JQuery / AngularJS / React&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中间件&lt;/strong&gt;：Redis / RabbitMQ / Kafka / xxl-job / Nginx / Zookeeper&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运维&amp;amp;工具&lt;/strong&gt;：Docker / Linux / Git / Jenkins / K8s&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库&lt;/strong&gt;：MySQL / Oracle / HBase / Hive&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他语言&lt;/strong&gt;：Python / PHP / Node.js（了解）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-开源项目&#34;&gt;🚀 开源项目
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SoundJourney（景音随行）&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;面向旅游场景的微信小程序，支持语音讲解与导航，提供个性化路线规划。&lt;/li&gt;
+&lt;li&gt;网址：&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devstorex.top&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Seckill 秒杀助手&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chrome 浏览器插件，辅助用户在秒杀场景中实现自动化点击操作。&lt;/li&gt;
+&lt;li&gt;GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao/seckill&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/gongjunhao/seckill&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cookie Extraction 助手&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器 Cookie 提取工具，适用于爬虫项目中绕过验证码或复用登录状态。&lt;/li&gt;
+&lt;li&gt;GitHub：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao/cookie-extraction&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/gongjunhao/cookie-extraction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;-项目案例部分&#34;&gt;📂 项目案例（部分）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;亲清在线平台&lt;/strong&gt;：政务政策兑现系统，微服务架构，覆盖企业超30万家。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智慧监管平台&lt;/strong&gt;：结合物联网技术，完成70余家仓库智能化改造。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;采集智能运维平台&lt;/strong&gt;：供电企业智能化闭环管理系统。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;阳光智采平台&lt;/strong&gt;：B2B交易平台，涵盖支付、订单系统重构等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;政府OA系统集群项目&lt;/strong&gt;：多个政务单位办公系统的搭建与维护。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-联系方式&#34;&gt;📫 联系方式
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gongjunhao&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@gongjunhao&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;邮箱&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;mailto:gongjunhao@sina.com&#34; &gt;gongjunhao@sina.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;博客&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://blog.devstorex.top/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.devstorex.top/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;微信&lt;/strong&gt;：（扫描页面右下角二维码添加）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>归档</title>
         <link>https://blog.devstorex.top/archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

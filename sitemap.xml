@@ -12,8 +12,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.devstorex.top/about/</loc>
+    <loc>https://blog.devstorex.top/about/contact/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/about/projects/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/about/techstack/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/about/skills/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
