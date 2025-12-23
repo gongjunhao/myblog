@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="宫程狮">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+
+
+<meta property="og:title" content="Halo 搭建优化记录：主题改造、插件管理、后台配置实战">
+<meta property="og:description" content="">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.devstorex.top/archives/halo-console/">
+<meta property="og:site_name" content="宫程狮">
+<meta property="og:image" content="https://blog.devstorex.top/img/posts/halo-console.png">
+<meta property="og:locale" content="zh-cn">
+<meta property="article:published_time" content="2025-04-19T00:00:00Z">
+<meta property="article:modified_time" content="2025-04-19T00:00:00Z">
+<meta property="article:section" content="post">
+<meta property="article:tag" content="Halo, 博客搭建, CMS">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@gongjunhao">
+<meta name="twitter:creator" content="@gongjunhao">
+<meta name="twitter:title" content="Halo 搭建优化记录：主题改造、插件管理、后台配置实战">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://blog.devstorex.top/img/posts/halo-console.png">
+
+
+<meta name="google-site-verification" content="6cef87e4d5246bcb8ccbff66ba78fce5">
+<meta name="baidu-site-verification" content="4ee88b11b0def7ca9bc34d99e5958422"><title>Halo 搭建优化记录：主题改造、插件管理、后台配置实战</title>
+
+<link rel='canonical' href='https://blog.devstorex.top/archives/halo-console/'>
+
+<link rel="stylesheet" href="/scss/style.min.5f521a2a38cf0b01c3c9a4c35156141a1e29618aab71ef0ee927f16bb754717d.css"><meta property='og:title' content="Halo 搭建优化记录：主题改造、插件管理、后台配置实战">
+<meta property='og:description' content="Halo 是一款优秀的开源博客系统，本文记录了搭建和优化 Halo 博客的完整过程。\n">
+<meta property='og:url' content='https://blog.devstorex.top/archives/halo-console/'>
+<meta property='og:site_name' content='宫程狮'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Halo' /><meta property='article:tag' content='博客搭建' /><meta property='article:tag' content='CMS' /><meta property='article:published_time' content='2025-04-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.devstorex.top/img/posts/halo-console.png' />
+<meta name="twitter:site" content="@@gongjunhao">
+    <meta name="twitter:creator" content="@@gongjunhao"><meta name="twitter:title" content="Halo 搭建优化记录：主题改造、插件管理、后台配置实战">
+<meta name="twitter:description" content="Halo 是一款优秀的开源博客系统，本文记录了搭建和优化 Halo 博客的完整过程。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.devstorex.top/img/posts/halo-console.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9X2QX2PNMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9X2QX2PNMF');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?4ee88b11b0def7ca9bc34d99e5958422";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/img/logo.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🦁</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">宫程狮</a></h1>
+            <h2 class="site-description">记录技术与生活中的每一刻灵感。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='mailto:gongjunhao@sina.com'
+                        target="_blank"
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1765031150038" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16369" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256"><path d="M944 146.5H80c-44.183 0-80 35.817-80 80v590c0 44.184 35.817 80 80 80h864c44.183 0 80-35.816 80-80v-590c0-44.183-35.817-80-80-80z m-864 50h864c16.542 0 30 13.458 30 30v60.605L512 539.324 50 287.104V226.5c0-16.542 13.458-30 30-30z m864 650H80c-16.542 0-30-13.458-30-30V344.07l449.958 245.646a24.896 24.896 0 0 0 12.049 3.059c4.074 0.013 8.208-0.97 12.036-3.06L974 344.07V816.5c0 16.542-13.458 30-30 30z" fill="#999999" p-id="16370"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/gongjunhao'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://qm.qq.com/q/snFJ8E8q9G'
+                        target="_blank"
+                        title="QQ"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1765035713366" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5184" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256"><path d="M849.621 619.904a1364.352 1364.352 0 0 0-28.8-80.47l-38.826-95.829c0-1.109 0.512-19.968 0.512-29.696 0-163.882-78.208-328.576-270.507-328.576S241.493 250.027 241.493 413.867c0 9.77 0.47 28.629 0.512 29.738l-38.826 95.83a1398.485 1398.485 0 0 0-28.8 80.469c-36.694 116.779-24.79 165.12-15.744 166.187 19.413 2.304 75.562-87.894 75.562-87.894 0 52.224 27.179 120.406 86.016 169.643-21.973 6.699-48.938 17.024-66.304 29.653-15.573 11.392-13.61 23.04-10.794 27.734 12.33 20.522 211.413 13.098 268.928 6.698 57.472 6.4 256.597 13.824 268.885-6.741 2.816-4.693 4.779-16.299-10.795-27.69-17.365-12.63-44.33-22.955-66.346-29.697 58.837-49.194 86.016-117.376 86.016-169.642 0 0 56.149 90.24 75.562 87.893 9.046-1.067 20.907-49.365-15.786-166.144" fill="#CDCDCD" p-id="5185"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/post/' >
+                
+                
+                
+                <span>文章</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/privacy/' >
+                
+                
+                
+                <span>隐私政策</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/disclaimer/' >
+                
+                
+                
+                <span>免责声明</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/contact/' >
+                
+                
+                
+                <span>联系我们</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/friends/' >
+                
+                
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#-技术实现--核心操作流程">⚙️ 技术实现 / 核心操作流程</a>
+      <ol>
+        <li><a href="#-初始化设置">🛠️ 初始化设置</a></li>
+        <li><a href="#-主题管理与改造">🎨 主题管理与改造</a></li>
+        <li><a href="#-插件安装--配置">🔌 插件安装 &amp; 配置</a>
+          <ol>
+            <li><a href="#-ai-助手插件">🧠 AI 助手插件</a></li>
+            <li><a href="#-markdown-编辑器插件">✍️ Markdown 编辑器插件</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#-遇到的问题--解决方法">🕳️ 遇到的问题 &amp; 解决方法</a>
+      <ol>
+        <li><a href="#-插件无法连接-ai-接口">❌ 插件无法连接 AI 接口</a></li>
+        <li><a href="#-markdown-插件使用不流畅">❌ Markdown 插件使用不流畅</a></li>
+      </ol>
+    </li>
+    <li><a href="#-我的思考">💡 我的思考</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/archives/halo-console/">
+                
+                    <img src="/img/posts/halo-console.png" loading="lazy" alt="Featured image of post Halo 搭建优化记录：主题改造、插件管理、后台配置实战" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" >
+                技术笔记
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/archives/halo-console/">Halo 搭建优化记录：主题改造、插件管理、后台配置实战</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-04-19T00:00:00Z'>2025年04月19日</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Halo 是一款优秀的开源博客系统，本文记录了搭建和优化 Halo 博客的完整过程。</p>
+<h2 id="-技术实现--核心操作流程">⚙️ 技术实现 / 核心操作流程
+</h2><h3 id="-初始化设置">🛠️ 初始化设置
+</h3><p>部署完成后，首次访问站点会自动跳转至初始化引导页，设置内容包括：</p>
+<ul>
+<li>博客标题（我命名为：宫程狮 🦁）</li>
+<li>管理员账号：用户名、邮箱、密码</li>
+<li>后台访问入口：<code>http(s)://yourdomain.com/console</code></li>
+</ul>
+<p>初始化成功后即可进入后台，建议立刻完成以下几项基础配置：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>配置项</th>
+          <th>推荐做法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>博客信息</td>
+          <td>填写描述 &amp; SEO 关键词</td>
+      </tr>
+      <tr>
+          <td>网站地址</td>
+          <td>配置为正式域名（如有 CDN）</td>
+      </tr>
+      <tr>
+          <td>评论系统</td>
+          <td>可对接 Giscus / Twikoo 等</td>
+      </tr>
+      <tr>
+          <td>访问统计</td>
+          <td>配置 Umami / 百度统计 / GA</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="-主题管理与改造">🎨 主题管理与改造
+</h3><p>Halo 主题生态丰富，目前已有多个支持自定义布局的优质主题。</p>
+<p>安装方式：</p>
+<ul>
+<li>管理后台 → 主题 → 市场 → 一键安装</li>
+<li>或上传主题 zip 包</li>
+</ul>
+<p>部分主题支持在后台直接编辑样式（CSS / JS / 模板片段），也支持本地开发调试。最终选用了官方默认主题（Earth）。</p>
+<h3 id="-插件安装--配置">🔌 插件安装 &amp; 配置
+</h3><h4 id="-ai-助手插件">🧠 AI 助手插件
+</h4><p>Halo 有社区维护的 AI 助手插件，支持多个平台（OpenAI、文心一言等）。</p>
+<p>配置项包括：</p>
+<ul>
+<li>✅ 全局代理地址（国内网络建议使用）</li>
+<li>✅ OpenAI Key</li>
+<li>✅ 文心一言 API Key</li>
+<li>✅ 回答温度、对话上下文、模型选择等</li>
+</ul>
+<p>✨ 功能体验：</p>
+<ul>
+<li>博客后台写作辅助</li>
+<li>插入智能摘要 / 总结段落</li>
+<li>AI SEO 标题生成器（这个功能很香！）</li>
+</ul>
+<h4 id="-markdown-编辑器插件">✍️ Markdown 编辑器插件
+</h4><p>Halo 默认编辑器不够强大，建议安装社区版 Markdown 插件。</p>
+<p>我最终选择了 ByteMD，虽然在中文输入时偶尔出现光标偏移问题，但整体体验还算顺滑。</p>
+<h2 id="-遇到的问题--解决方法">🕳️ 遇到的问题 &amp; 解决方法
+</h2><h3 id="-插件无法连接-ai-接口">❌ 插件无法连接 AI 接口
+</h3><p>配置全局代理后解决</p>
+<h3 id="-markdown-插件使用不流畅">❌ Markdown 插件使用不流畅
+</h3><p>可以本地写好后粘贴进来发布</p>
+<h2 id="-我的思考">💡 我的思考
+</h2><p>Halo 作为一款现代化的博客系统，在易用性和可扩展性之间取得了很好的平衡。适合想要快速搭建博客的开发者。</p>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/halo/">Halo</a>
+        
+            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
+        
+            <a href="/tags/cms/">CMS</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/archives/blog/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/posts/blog.png" loading="lazy" data-key="" data-hash="/img/posts/blog.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">为什么我最终选择了 Halo 搭建技术博客？从反复尝试到正式上线的完整过程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/archives/hello-halo/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/posts/hello-halo.png" loading="lazy" data-key="" data-hash="/img/posts/hello-halo.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hello Halo</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/archives/tts/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/posts/tts.png" loading="lazy" data-key="" data-hash="/img/posts/tts.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">景音随行：低资源服务器上快速落地 TTS（文本转语音）服务实践</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/archives/markdown/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/posts/markdown.png" loading="lazy" data-key="" data-hash="/img/posts/markdown.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown——入门指南：写给第一次接触它的你</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/archives/cursor-rules/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/img/posts/cursor-rules.png" loading="lazy" data-key="" data-hash="/img/posts/cursor-rules.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        <div class="comments"><script src="https://utteranc.es/client.js" 
+        repo="gongjunhao/blog-comments"
+        issue-term="pathname"
+        
+        label="comment"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script></div>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2025 宫程狮
+    </section>
+    
+    <section class="powerby">
+        
+            用心记录，分享技术与生活 <br/>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
