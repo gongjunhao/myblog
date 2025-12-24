@@ -6,7 +6,128 @@
         <description>Recent content in Posts on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BlurMate浏览器扩展：AI驱动的智能隐私保护工具</title>
+        <link>https://blog.devstorex.top/archives/blurmate-browser-extension/</link>
+        <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.devstorex.top/archives/blurmate-browser-extension/</guid>
+        <description>&lt;img src="https://blog.devstorex.top/img/posts/obscura-ai-cn.png" alt="Featured image of post BlurMate浏览器扩展：AI驱动的智能隐私保护工具" /&gt;&lt;p&gt;BlurMate 是一款功能强大的浏览器扩展，专为保护网页中的敏感信息而设计。它结合了传统规则匹配和先进的AI技术，能够智能识别并模糊处理页面中的隐私数据，为用户提供全面的隐私保护解决方案。&lt;/p&gt;
+&lt;h2 id=&#34;-核心价值&#34;&gt;🎯 核心价值
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;隐私保护&lt;/strong&gt;：防止敏感信息在屏幕共享、截图时泄露&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能识别&lt;/strong&gt;：AI驱动的敏感信息自动检测&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;灵活操作&lt;/strong&gt;：支持手动选择和批量处理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据持久化&lt;/strong&gt;：模糊状态可保存和自动恢复&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用户友好&lt;/strong&gt;：直观的界面和流畅的操作体验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-功能特性&#34;&gt;✨ 功能特性
+&lt;/h2&gt;&lt;h3 id=&#34;-ai智能模糊&#34;&gt;🤖 AI智能模糊
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多AI模型支持&lt;/strong&gt;：集成DeepSeek、Kimi、ChatGPT、Gemini等主流AI模型&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能识别&lt;/strong&gt;：自动识别姓名、地址、工作单位等复杂敏感信息&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;规则匹配&lt;/strong&gt;：内置身份证、手机号、银行卡、邮箱等常见敏感信息规则&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自定义规则&lt;/strong&gt;：支持用户添加正则表达式规则&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;批量处理&lt;/strong&gt;：一键智能模糊页面中所有敏感信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-手动模糊模式&#34;&gt;🎨 手动模糊模式
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DOM元素模式&lt;/strong&gt;：点击选择页面元素进行精确模糊&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文本选择模式&lt;/strong&gt;：选择文本后一键模糊&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;区域选择模式&lt;/strong&gt;：拖拽创建矩形区域模糊&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强度控制&lt;/strong&gt;：1-50级可调节模糊强度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实时预览&lt;/strong&gt;：鼠标悬停显示模糊效果预览&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-数据管理&#34;&gt;💾 数据管理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;状态保存&lt;/strong&gt;：模糊状态可保存到本地存储&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动恢复&lt;/strong&gt;：页面刷新后自动恢复已保存的模糊状态&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据透明&lt;/strong&gt;：在设置页面查看所有保存的模糊数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;精细管理&lt;/strong&gt;：支持删除单个元素、整个网站或所有数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据统计&lt;/strong&gt;：显示网站标题、URL、模糊数量和修改时间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;URL关联&lt;/strong&gt;：以页面URL为单位管理模糊数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;早期加载&lt;/strong&gt;：页面加载时显示蒙版，避免敏感信息泄露&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;撤销重做&lt;/strong&gt;：支持最近10次操作的撤销和重做&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-用户体验&#34;&gt;🌍 用户体验
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;：中文、英文、日文、繁体中文&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;响应式设计&lt;/strong&gt;：适配不同屏幕尺寸和设备&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快捷键支持&lt;/strong&gt;：ESC键快速退出模糊模式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;状态提示&lt;/strong&gt;：清晰的操作反馈和状态指示&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;无缝集成&lt;/strong&gt;：不影响原网页功能和布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-安装使用&#34;&gt;🚀 安装使用
+&lt;/h2&gt;&lt;h3 id=&#34;系统要求&#34;&gt;系统要求
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Chrome 88+ 或其他基于Chromium的浏览器&lt;/li&gt;
+&lt;li&gt;支持Manifest V3的浏览器环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;安装方式&#34;&gt;安装方式
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载最新版本的扩展包 &lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads/8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载地址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;打开Chrome扩展管理页面 (&lt;code&gt;chrome://extensions/&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;开启&amp;quot;开发者模式&amp;quot;&lt;/li&gt;
+&lt;li&gt;点击&amp;quot;加载已解压的扩展程序&amp;quot;&lt;/li&gt;
+&lt;li&gt;选择解压后的扩展目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;快速开始&#34;&gt;快速开始
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;激活工具栏&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击浏览器工具栏中的BlurMate图标&lt;/li&gt;
+&lt;li&gt;页面底部将显示模糊工具栏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;选择模糊模式&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DOM模式&lt;/strong&gt;：点击页面元素进行模糊&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;文本模式&lt;/strong&gt;：选择文本后点击模糊按钮&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;区域模式&lt;/strong&gt;：拖拽创建矩形模糊区域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AI智能模糊&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击设置配置AI模型和API密钥&lt;/li&gt;
+&lt;li&gt;点击AI智能模糊按钮自动识别敏感信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;保存和恢复&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击保存按钮保存当前模糊状态&lt;/li&gt;
+&lt;li&gt;页面刷新后自动恢复已保存的模糊效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;数据管理&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在设置页面查看&amp;quot;模糊数据管理&amp;quot;部分&lt;/li&gt;
+&lt;li&gt;查看所有网站的模糊数据统计&lt;/li&gt;
+&lt;li&gt;删除不需要的模糊元素或网站数据&lt;/li&gt;
+&lt;li&gt;一键清空所有保存的模糊数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;-开发指南&#34;&gt;🛠️ 开发指南
+&lt;/h2&gt;&lt;h3 id=&#34;技术栈&#34;&gt;技术栈
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;前端框架&lt;/strong&gt;：React 18 + TypeScript&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;构建工具&lt;/strong&gt;：Vite 4&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;样式方案&lt;/strong&gt;：Tailwind CSS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;扩展API&lt;/strong&gt;：Chrome Extension Manifest V3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI集成&lt;/strong&gt;：多模型API支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-获取插件&#34;&gt;📥 获取插件
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;下载地址&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://www.devstorex.top/account/downloads/8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devstorex.top/account/downloads/8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;想要更好地保护你的网页隐私？试试 BlurMate，让敏感信息在需要时自动隐藏，让你在分享屏幕或截图时更加安心！&lt;/p&gt;</description>
+        </item>
+        <item>
         <title>埃隆·马斯克的未来预测：从AI丰裕时代到多行星文明</title>
         <link>https://blog.devstorex.top/archives/elon-musk-future-predictions/</link>
         <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
