@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name="description" content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name="description" content="详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序&#43;管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。">
 <meta name="keywords" content="">
 <meta name="author" content="宫程狮">
 <meta name="robots" content="index, follow">
@@ -10,39 +9,46 @@
 
 
 <meta property="og:title" content="用 Cursor 深度打造《SoundJourney》">
-<meta property="og:description" content="">
+<meta property="og:description" content="详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序&#43;管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://blog.devstorex.top/archives/cursor/">
 <meta property="og:site_name" content="宫程狮">
 <meta property="og:image" content="https://blog.devstorex.top/img/posts/cursor.png">
 <meta property="og:locale" content="zh-cn">
+
 <meta property="article:published_time" content="2025-04-16T00:00:00Z">
+
 <meta property="article:modified_time" content="2025-04-16T00:00:00Z">
+
 <meta property="article:section" content="post">
-<meta property="article:tag" content="Cursor, AI开发, 小程序, SoundJourney">
+
+<meta property="article:tag" content="Cursor , AI开发 , 小程序 , SoundJourney">
 
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@gongjunhao">
 <meta name="twitter:creator" content="@gongjunhao">
 <meta name="twitter:title" content="用 Cursor 深度打造《SoundJourney》">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序&#43;管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。">
 <meta name="twitter:image" content="https://blog.devstorex.top/img/posts/cursor.png">
 
 
+
 <meta name="google-site-verification" content="6cef87e4d5246bcb8ccbff66ba78fce5">
-<meta name="baidu-site-verification" content="4ee88b11b0def7ca9bc34d99e5958422"><title>用 Cursor 深度打造《SoundJourney》</title>
+
+<meta name="baidu-site-verification" content="4ee88b11b0def7ca9bc34d99e5958422">
+<title>用 Cursor 深度打造《SoundJourney》</title>
 
 <link rel='canonical' href='https://blog.devstorex.top/archives/cursor/'>
 
 <link rel="stylesheet" href="/scss/style.min.5f521a2a38cf0b01c3c9a4c35156141a1e29618aab71ef0ee927f16bb754717d.css"><meta property='og:title' content="用 Cursor 深度打造《SoundJourney》">
-<meta property='og:description' content="这个项目的起点，其实是源自两个字：好奇。我一直对 AI 编程助手感兴趣，尤其是看到 Cursor 这类工具快速发展。\n">
+<meta property='og:description' content="详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序+管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。">
 <meta property='og:url' content='https://blog.devstorex.top/archives/cursor/'>
 <meta property='og:site_name' content='宫程狮'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cursor' /><meta property='article:tag' content='AI开发' /><meta property='article:tag' content='小程序' /><meta property='article:tag' content='SoundJourney' /><meta property='article:published_time' content='2025-04-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-16T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.devstorex.top/img/posts/cursor.png' />
 <meta name="twitter:site" content="@@gongjunhao">
     <meta name="twitter:creator" content="@@gongjunhao"><meta name="twitter:title" content="用 Cursor 深度打造《SoundJourney》">
-<meta name="twitter:description" content="这个项目的起点，其实是源自两个字：好奇。我一直对 AI 编程助手感兴趣，尤其是看到 Cursor 这类工具快速发展。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序+管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.devstorex.top/img/posts/cursor.png' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X2QX2PNMF"></script>
 <script>
@@ -367,6 +373,10 @@ s.parentNode.insertBefore(hm, s);
             <a href="/archives/cursor/">用 Cursor 深度打造《SoundJourney》</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            详细记录使用 Cursor AI 编程助手开发智能导游小程序《SoundJourney》的完整实战经历。从需求讨论、项目搭建到 Bug 处理，15 天完成小程序&#43;管理后台 MVP。探索 AI 辅助开发的无限可能，一个人完成过去需要团队才能完成的工作。
+        </h3>
         
     </div>
 

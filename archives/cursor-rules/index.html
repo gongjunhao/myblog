@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name="description" content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name="description" content="分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。">
 <meta name="keywords" content="">
 <meta name="author" content="宫程狮">
 <meta name="robots" content="index, follow">
@@ -10,39 +9,46 @@
 
 
 <meta property="og:title" content="利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式">
-<meta property="og:description" content="">
+<meta property="og:description" content="分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://blog.devstorex.top/archives/cursor-rules/">
 <meta property="og:site_name" content="宫程狮">
 <meta property="og:image" content="https://blog.devstorex.top/img/posts/cursor-rules.png">
 <meta property="og:locale" content="zh-cn">
+
 <meta property="article:published_time" content="2025-04-17T00:00:00Z">
+
 <meta property="article:modified_time" content="2025-04-17T00:00:00Z">
+
 <meta property="article:section" content="post">
-<meta property="article:tag" content="Cursor, AI开发, 编程效率, 开发工具">
+
+<meta property="article:tag" content="Cursor , AI开发 , 编程效率 , 开发工具">
 
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@gongjunhao">
 <meta name="twitter:creator" content="@gongjunhao">
 <meta name="twitter:title" content="利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。">
 <meta name="twitter:image" content="https://blog.devstorex.top/img/posts/cursor-rules.png">
 
 
+
 <meta name="google-site-verification" content="6cef87e4d5246bcb8ccbff66ba78fce5">
-<meta name="baidu-site-verification" content="4ee88b11b0def7ca9bc34d99e5958422"><title>利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式</title>
+
+<meta name="baidu-site-verification" content="4ee88b11b0def7ca9bc34d99e5958422">
+<title>利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式</title>
 
 <link rel='canonical' href='https://blog.devstorex.top/archives/cursor-rules/'>
 
 <link rel="stylesheet" href="/scss/style.min.5f521a2a38cf0b01c3c9a4c35156141a1e29618aab71ef0ee927f16bb754717d.css"><meta property='og:title' content="利用 Cursor + AI 开发：我如何设计和优化 Cursor Rules 的思维模式">
-<meta property='og:description' content="很多开发者刚接触 AI 编程助手时，容易落入&quot;只问代码&quot;的误区。本文分享我设计的 Cursor Rules 思维模型。\n">
+<meta property='og:description' content="分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。">
 <meta property='og:url' content='https://blog.devstorex.top/archives/cursor-rules/'>
 <meta property='og:site_name' content='宫程狮'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Cursor' /><meta property='article:tag' content='AI开发' /><meta property='article:tag' content='编程效率' /><meta property='article:tag' content='开发工具' /><meta property='article:published_time' content='2025-04-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.devstorex.top/img/posts/cursor-rules.png' />
 <meta name="twitter:site" content="@@gongjunhao">
     <meta name="twitter:creator" content="@@gongjunhao"><meta name="twitter:title" content="利用 Cursor + AI 开发：我如何设计和优化 Cursor Rules 的思维模式">
-<meta name="twitter:description" content="很多开发者刚接触 AI 编程助手时，容易落入&quot;只问代码&quot;的误区。本文分享我设计的 Cursor Rules 思维模型。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.devstorex.top/img/posts/cursor-rules.png' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X2QX2PNMF"></script>
 <script>
@@ -358,6 +364,10 @@ s.parentNode.insertBefore(hm, s);
             <a href="/archives/cursor-rules/">利用 Cursor &#43; AI 开发：我如何设计和优化 Cursor Rules 的思维模式</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            分享我如何设计 Cursor Rules 思维模型，建立系统化的 AI 协作框架。涵盖系统思维、辩证思维、创造性思维和批判性思维四大核心模式，从初步理解到实施验证的完整解决方案流程，帮助开发者提高代码质量和开发效率，避免 AI 编程助手的常见误区。
+        </h3>
         
     </div>
 
