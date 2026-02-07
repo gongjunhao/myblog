@@ -6,7 +6,110 @@
         <description>Recent content in Posts on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.devstorex.top/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>从 0 到 2 个工具站：DevStoreX 的工程复盘</title>
+        <link>https://blog.devstorex.top/archives/devstorex-tools/</link>
+        <pubDate>Sat, 07 Feb 2026 00:00:00 +0800</pubDate>
+        
+        <guid>https://blog.devstorex.top/archives/devstorex-tools/</guid>
+        <description>&lt;img src="https://blog.devstorex.top/img/posts/devstorex-tools.png" alt="Featured image of post 从 0 到 2 个工具站：DevStoreX 的工程复盘" /&gt;&lt;blockquote&gt;
+&lt;p&gt;这是一篇偏工程化的复盘：我们如何在一套代码结构里完成中英文两套工具站，落地部署、SEO 与统计，并解决各种线上细节问题。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;背景与目标&#34;&gt;背景与目标
+&lt;/h2&gt;&lt;p&gt;目标很清晰：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;做一个英文工具站（&lt;code&gt;tools.devstorex.top&lt;/code&gt;），以 SEO + 工具聚合为主。&lt;/li&gt;
+&lt;li&gt;在同一工程中再做中文站（&lt;code&gt;tools-cn.devstorex.top&lt;/code&gt;），按中文关键词序列逐个实现。&lt;/li&gt;
+&lt;li&gt;后端只保留少量必要接口，尽量前端本地 完成计算。&lt;/li&gt;
+&lt;li&gt;完成部署、统计、站点地图与基础 SEO。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;工程结构&#34;&gt;工程结构
+&lt;/h2&gt;&lt;p&gt;统一工程目录是关键，避免维护两套仓库：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GATools/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─ site/        # English
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─ site-cn/     # 中文
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─ server/      # Go 后端（API）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├─ doc/         # 文档与报告
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;前端是静态页面，后端只承担确实需要的接口（如端口扫描、手机号归属地等）。&lt;/p&gt;
+&lt;h2 id=&#34;工具批量实现从关键词列表驱动&#34;&gt;工具批量实现：从关键词列表驱动
+&lt;/h2&gt;&lt;p&gt;中文站的工具不是&amp;quot;想到做什么就做什么&amp;quot;，而是严格按 &lt;code&gt;doc/keywords-cn.md&lt;/code&gt; 的顺序推进。这样做有两个好处：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;任务拆解清晰，可控、可追踪。&lt;/li&gt;
+&lt;li&gt;SEO 关键词覆盖完整，不容易遗漏高价值条目。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;实现上采用统一页面模板 + 每页 &lt;code&gt;page.css / page.js&lt;/code&gt; 的方式，保证样式一致、迭代成本低。&lt;br&gt;
+每个工具页面都保留：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero 区域：标题、说明、标签&lt;/li&gt;
+&lt;li&gt;表单区：输入/操作&lt;/li&gt;
+&lt;li&gt;结果区：卡片或列表&lt;/li&gt;
+&lt;li&gt;FAQ / 说明区（必要时）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;后端策略只做必须的接口&#34;&gt;后端策略：只做必须的接口
+&lt;/h2&gt;&lt;p&gt;坚持&amp;quot;能前端就前端&amp;quot;的原则。只有这类工具才走后端：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;端口扫描&lt;/li&gt;
+&lt;li&gt;Ping / 网络延迟（需要系统命令）&lt;/li&gt;
+&lt;li&gt;手机号码归属地（本地 sqlite 数据库）&lt;/li&gt;
+&lt;li&gt;身份证/行政区划等数据型查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go 后端统一 &lt;code&gt;/api/*&lt;/code&gt; 路由映射，避免每个 API 都写一条 Nginx 配置。&lt;/p&gt;
+&lt;h2 id=&#34;部署设计&#34;&gt;部署设计
+&lt;/h2&gt;&lt;p&gt;采用单脚本自动部署：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生成 linux 可执行文件&lt;/li&gt;
+&lt;li&gt;打包 &lt;code&gt;site/&lt;/code&gt;、&lt;code&gt;site-cn/&lt;/code&gt;、&lt;code&gt;server/data/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;上传到服务器 &lt;code&gt;/opt/devstorex/tools&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;systemd 重启后端&lt;/li&gt;
+&lt;li&gt;Nginx reload&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;部署脚本：&lt;code&gt;deploy_tools.sh&lt;/code&gt;&lt;br&gt;
+这套流程简化了发布动作，并保证站点与后端一体更新。&lt;/p&gt;
+&lt;h2 id=&#34;seo-与统计落地&#34;&gt;SEO 与统计落地
+&lt;/h2&gt;&lt;p&gt;SEO 是工具站成败的分水岭，主要做了这些：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;全站 canonical 修正&lt;/strong&gt;（英文站与中文站分域名）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenGraph / Twitter Meta 补齐&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON‑LD（WebApplication）注入&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sitemap.xml 自动生成&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;robots.txt 明确允许 + sitemap&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bing 站点验证&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GA 统计接入（中文站）&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此外，为了提升页面内部链接结构，给所有工具页加入了&amp;quot;相关工具推荐&amp;quot;模块，避免孤立页面。&lt;/p&gt;
+&lt;h2 id=&#34;线上问题与修复&#34;&gt;线上问题与修复
+&lt;/h2&gt;&lt;p&gt;一些真实踩坑：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;robots.txt&lt;/code&gt; 被 CDN 缓存成首页：通过 Nginx &lt;code&gt;no-store&lt;/code&gt; + Cloudflare 清缓存解决。&lt;/li&gt;
+&lt;li&gt;JSON/文本工具的样式问题：统一按钮与结果区布局后稳定。&lt;/li&gt;
+&lt;li&gt;文件上传组件在 MCP 浏览器不可用：真实浏览器可用，最终保留现有方案。&lt;/li&gt;
+&lt;li&gt;PDF 拆分报错：修正为 &lt;code&gt;copyPages&lt;/code&gt; 方式处理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些问题不复杂，但如果没有系统化复盘，很容易一遍遍踩。&lt;/p&gt;
+&lt;h2 id=&#34;得到的经验&#34;&gt;得到的经验
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;关键词驱动的生产力很高&lt;/strong&gt;：能避免&amp;quot;永远在做首页&amp;quot;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;统一模板是救命的&lt;/strong&gt;：否则 100 个工具会变成 100 套样式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SEO 要先搭框架&lt;/strong&gt;：否则后期补救工作量极大。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署一定要脚本化&lt;/strong&gt;：人工操作一定会出错。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;/h2&gt;&lt;p&gt;这套中英文工具站并不复杂，但能跑起来、可维护、可扩展，并且有清晰的 SEO 路径。&lt;br&gt;
+后续如果要扩展更多站点（如日文/西班牙文），可以直接复用当前结构。&lt;/p&gt;
+&lt;p&gt;如果你也在做工具站，希望这篇复盘能让你少踩一些坑。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>自动评论软件，可能是我今年用过最省时间的工具之一</title>
         <link>https://blog.devstorex.top/archives/auto-comment-software/</link>
         <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
