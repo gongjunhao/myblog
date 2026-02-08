@@ -5,6 +5,8 @@
         <link>https://blog.devstorex.top/search/</link>
         <description>Recent content in 搜索 on 宫程狮</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://blog.devstorex.top/search/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language>
+        <managingEditor>gongjunhao@sina.com (宫程狮)</managingEditor>
+        <webMaster>gongjunhao@sina.com (宫程狮)</webMaster><atom:link href="https://blog.devstorex.top/search/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

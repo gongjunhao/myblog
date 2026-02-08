@@ -1,11 +1,11 @@
 [{
     "title": "从 0 到 2 个工具站：DevStoreX 的工程复盘",
     "url": "/archives/devstorex-tools/",
-    "description": " 这是一篇偏工程化的复盘：我们如何在一套代码结构里完成中英文两套工具站，落地部署、SEO 与统计，并解决各种线上细节问题。\n背景与目标 目标很清晰：\n做一个英文工具站（tools.devstorex.top），以 SEO + 工具聚合为主。 在同一工程中再做中文站（tools-cn.devstorex.top），按中文关键词序列逐个实现。 后端只保留少量必要接口，尽量前端本地 完成计算。 完成部署、统计、站点地图与基础 SEO。 工程结构 统一工程目录是关键，避免维护两套仓库：\n1 2 3 4 5 GATools/ ├─ site/ # English ├─ site-cn/ # 中文 ├─ server/ # Go 后端（API） ├─ doc/ # 文档与报告 前端是静态页面，后端只承担确实需要的接口（如端口扫描、手机号归属地等）。\n工具批量实现：从关键词列表驱动 中文站的工具不是\u0026quot;想到做什么就做什么\u0026quot;，而是严格按 doc/keywords-cn.md 的顺序推进。这样做有两个好处：\n任务拆解清晰，可控、可追踪。 SEO 关键词覆盖完整，不容易遗漏高价值条目。 实现上采用统一页面模板 + 每页 page.css / page.js 的方式，保证样式一致、迭代成本低。\n每个工具页面都保留：\nHero 区域：标题、说明、标签 表单区：输入/操作 结果区：卡片或列表 FAQ / 说明区（必要时） 后端策略：只做必须的接口 坚持\u0026quot;能前端就前端\u0026quot;的原则。只有这类工具才走后端：\n端口扫描 Ping / 网络延迟（需要系统命令） 手机号码归属地（本地 sqlite 数据库） 身份证/行政区划等数据型查询 Go 后端统一 /api/* 路由映射，避免每个 API 都写一条 Nginx 配置。\n"
+    "description": " 这是一篇偏工程化的复盘：我们如何在一套代码结构里完成中英文两套工具站，落地部署、SEO 与统计，并解决各种线上细节问题。\n背景与目标 目标很清晰：\n做一个英文工具站（tools.devstorex.top），以 SEO + 工具聚合为主。 在同一工程中再做中文站（tools-cn.devstorex.top），按中文关键词序列逐个实现。 后端只保留少量必要接口，尽量前端本地 完成计算。 完成部署、统计、站点地图与基础 SEO。 工程结构 统一工程目录是关键，避免维护两套仓库：\n"
   },{
     "title": "自动评论软件，可能是我今年用过最省时间的工具之一",
     "url": "/archives/auto-comment-software/",
-    "description": "以前我一直对「自动评论软件」有点抗拒。\n总觉得这种东西要么太机械，要么容易翻车，不如自己手动来得安心。\n但真正开始同时维护 抖音和小红书账号之后，我才意识到一个现实问题：\n不是我不想认真互动，而是真的没那么多时间。\n做内容的人，迟早都会卡在“互动”这一步 如果你也在做内容，大概会懂这种感觉👇\n内容花了很多心思，但互动却跟不上 每天刷大量视频 / 笔记，只为了点赞、评论“刷存在感” 评论要写得自然、有价值，不能太敷衍 一忙起来就忘记互动，账号活跃度明显下降 久而久之，互动这件事反而成了最消耗精力、但又不得不做的工作。\n为什么我开始尝试自动评论软件？ 我后来想通了一件事：\n评论本身是有价值的，但“重复写评论”这件事没那么有价值。\n于是开始尝试一些自动评论软件，真正用下来之后，发现只要方式对，其实体验完全不是我之前想的那样。\n好用的自动评论软件，至少要满足这几点 不是所有自动评论软件都值得用，但真正好用的，基本都有这些特点：\n① 评论要“像真人”，而不是模板刷屏 现在的平台对机械化操作非常敏感。\n好的自动评论软件，会结合内容生成更自然的评论，而不是千篇一律的句式。\n② 节奏可控，而不是无脑跑量 评论数量、时间间隔、随机延迟，都应该是可调的。\n节奏对了，用起来才安心。\n③ 能覆盖真实使用场景 比如：\n关键词找相关内容 针对同类视频 / 笔记互动 日常账号维护，而不是一次性冲量 实际用下来，最大的改变是什么？ 说几个最直观的变化：\n⏳ 时间占用大幅下降\n以前一两个小时的互动，现在几分钟就能安排好。\n💬 互动质量反而更稳定\n评论不再敷衍，也不会因为累了就乱写。\n🧠 精力回到内容本身\n不用再把注意力浪费在重复操作上。\n它不会帮你“躺着涨粉”，\n但会让你长期保持账号活跃这件事，变得可持续。\n自动评论 ≠ 作弊，而是效率工具 这里一定要说清楚一点：\n自动评论软件不是用来违规的 也不是让你完全不管账号 更合理的方式是：\n人负责判断和内容，软件负责重复劳动。\n只要使用得当，它更像是一个“省力工具”，而不是风险工具。\n适合哪些人尝试自动评论软件？ 如果你符合下面任意一条，其实都值得试试👇\n在运营抖音 / 小红书账号 需要长期维护互动 时间不多，但想把账号做稳 不想把精力耗在重复操作上 想体验的话，这里可以直接了解 我目前在用的自动评论软件（支持抖音和小红书），\n"
+    "description": "以前我一直对「自动评论软件」有点抗拒。\n总觉得这种东西要么太机械，要么容易翻车，不如自己手动来得安心。\n但真正开始同时维护 抖音和小红书账号之后，我才意识到一个现实问题：\n"
   },{
     "title": "BlurMate浏览器扩展：AI驱动的智能隐私保护工具",
     "url": "/archives/blurmate-browser-extension/",
@@ -23,115 +23,115 @@
     "url": "/archives/blog-migration-from-halo-to-hugo/",
     "description": "作为一名有着十多年软件开发经验的技术人，我一直热衷于记录和分享自己的技术心得。过去几年里，我的博客一直使用的是开源博客系统Halo，它功能强大、生态丰富且易于使用。\n"
   },{
-    "title": "插件授权码获取说明",
-    "url": "/archives/getlicense/",
-    "description": " 抖音、小红书自动评论助手授权码获取方式及使用说明\n"
-  },{
-    "title": "小红书自动评论助手下载安装使用",
-    "url": "/archives/xhs-auto-comment/",
-    "description": "小红书自动评论助手是一款浏览器扩展插件，可帮助用户在小红书平台上自动进行评论互动。\n"
-  },{
-    "title": "抖音自动评论助手下载安装使用",
-    "url": "/archives/dy-auto-comment/",
-    "description": "抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。\n"
-  },{
-    "title": "提升效率的秘密武器：浏览器自动化工具与抖音/小红书自动评论助手实战分享",
-    "url": "/archives/auto-tool/",
-    "description": " 用户痛点：重复操作让人抓狂。每天面对电脑，我们都可能会遇到这样的问题： 登录网站、重复填写表单 抓取数据、整理信息 上传内容或在社交平台手动互动。 "
-  },{
-    "title": "AI-Native Backend：后端的未来，可能不是被取代，而是被重构",
-    "url": "/archives/ai-native-backend/",
-    "description": "过去二十年，后端架构几乎没变：用户 → 接口 → 业务逻辑 → 数据库。而现在，AI 的崛起正在动摇这一切。\n"
-  },{
-    "title": "中小企业、个人创业者的新机会：用自动评论做精准引流、截流、获客",
-    "url": "/archives/yinliuhuoke/",
-    "description": "在流量越来越贵、获客越来越难的今天，很多中小企业老板、个人创业者、甚至个体户都在问同一个问题：\u0026ldquo;我怎么才能让更多人看到我？\u0026rdquo;\n"
-  },{
-    "title": "未来程序员的角色转变与学习路线图",
-    "url": "/archives/future-programmers/",
-    "description": "随着软件生态逐步走向去中心化和AI助手主导的时代，传统程序员的角色将发生巨大转变。\n"
+    "title": "2025年全球高质量种子资源网站汇总与实用指南",
+    "url": "/archives/pt-site/",
+    "description": "本文汇总了2025年全球高质量的PT（Private Tracker）站点信息，并提供使用指南。\n"
   },{
     "title": "未来软件生态的去中心化演进：当每个人都拥有 AI 助手",
     "url": "/archives/future-software-ecosystem/",
     "description": "在未来，每个人都会拥有一个属于自己的 AI 助手，它不仅仅是工具，更是用户与数字世界交互的\u0026quot;接口层\u0026quot;。\n"
   },{
-    "title": "Clash Party 客户端配置与使用指南：优化网络连接体验",
-    "url": "/archives/clash-party/",
-    "description": "本文将介绍如何使用 Clash Party 客户端配置个人网络连接，提升上网体验。\n"
-  },{
-    "title": "告别繁琐工作，数字化升级让婚恋服务更高效、更成功！",
-    "url": "/archives/hunjie-system/",
-    "description": "在当今快节奏的社会中，婚恋服务行业面临着巨大机遇与挑战。如何高效管理从获客到成功牵手的全流程？\n"
-  },{
-    "title": "Linux 旁路由 Mihomo 配置指南：优化家庭网络体验",
-    "url": "/archives/linux-mihomo/",
-    "description": "随着智能家居设备的普及，家庭网络优化需求日益增长。本文介绍如何在Linux旁路由上配置Mihomo。\n"
-  },{
-    "title": "初代米家晾衣架 上限位重置",
-    "url": "/archives/xiaomi-liangyijia/",
-    "description": "小米晾衣架高度调节问题？升到顶自动降下来，提示超重但实际没有超重？本文分享解决办法。\n"
-  },{
-    "title": "苹果系统MacOS微信双开方法",
-    "url": "/archives/macos-wechat/",
-    "description": "苹果系统MacOS下微信双开的完整方法，无需安装第三方软件。\n"
-  },{
-    "title": "景音随行：低资源服务器上快速落地 TTS（文本转语音）服务实践",
-    "url": "/archives/tts/",
-    "description": "在项目「景音随行」中，需要为每个景点提供自动语音讲解功能。本文分享低资源服务器上快速落地TTS服务的实践经验。\n"
-  },{
-    "title": "n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器",
-    "url": "/archives/n8n/",
-    "description": "我的技术博客一直是分享技术心得的平台，但博客文章的发布和推广流程比较繁琐。本文分享使用n8n实现博客自动发布的实践经验。\n"
-  },{
     "title": "Halo 搭建优化记录：主题改造、插件管理、后台配置实战",
     "url": "/archives/halo-console/",
     "description": "Halo 是一款优秀的开源博客系统，本文记录了搭建和优化 Halo 博客的完整过程。\n"
   },{
-    "title": "Markdown——入门指南：写给第一次接触它的你",
-    "url": "/archives/markdown/",
-    "description": "这篇文章是写给 Markdown 零基础的新手的。不需要你有代码基础，只要你会打字，就可以轻松上手。\n"
-  },{
-    "title": "为什么我最终选择了 Halo 搭建技术博客？从反复尝试到正式上线的完整过程",
-    "url": "/archives/blog/",
-    "description": "技术博客是每个开发者沉淀和分享的最佳方式之一。本文分享我选择 Halo 搭建技术博客的完整过程。\n"
-  },{
-    "title": "2025年全球高质量种子资源网站汇总与实用指南",
-    "url": "/archives/pt-site/",
-    "description": "本文汇总了2025年全球高质量的PT（Private Tracker）站点信息，并提供使用指南。\n"
+    "title": "中小企业、个人创业者的新机会：用自动评论做精准引流、截流、获客",
+    "url": "/archives/yinliuhuoke/",
+    "description": "在流量越来越贵、获客越来越难的今天，很多中小企业老板、个人创业者、甚至个体户都在问同一个问题：\u0026ldquo;我怎么才能让更多人看到我？\u0026rdquo;\n"
   },{
     "title": "利用 Cursor + AI 开发：我如何设计和优化 Cursor Rules 的思维模式",
     "url": "/archives/cursor-rules/",
     "description": "很多开发者刚接触 AI 编程助手时，容易落入\u0026quot;只问代码\u0026quot;的误区。本文分享我设计的 Cursor Rules 思维模型。\n"
   },{
-    "title": "抖音自动评论助手",
-    "url": "/archives/douyin-comment/",
-    "description": "抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。支持多种评论模式。\n"
+    "title": "秒杀插件(seckill)",
+    "url": "/archives/seckill/",
+    "description": "Chrome浏览器 抢购、秒杀插件（秒杀助手）可自定义秒杀辅助插件（减少人肉失误）。\n"
   },{
-    "title": "用 Cursor 深度打造《SoundJourney》",
-    "url": "/archives/cursor/",
-    "description": "这个项目的起点，其实是源自两个字：好奇。我一直对 AI 编程助手感兴趣，尤其是看到 Cursor 这类工具快速发展。\n"
+    "title": "Linux 旁路由 Mihomo 配置指南：优化家庭网络体验",
+    "url": "/archives/linux-mihomo/",
+    "description": "随着智能家居设备的普及，家庭网络优化需求日益增长。本文介绍如何在Linux旁路由上配置Mihomo。\n"
+  },{
+    "title": "景音随行：低资源服务器上快速落地 TTS（文本转语音）服务实践",
+    "url": "/archives/tts/",
+    "description": "在项目「景音随行」中，需要为每个景点提供自动语音讲解功能。本文分享低资源服务器上快速落地TTS服务的实践经验。\n"
+  },{
+    "title": "提升效率的秘密武器：浏览器自动化工具与抖音/小红书自动评论助手实战分享",
+    "url": "/archives/auto-tool/",
+    "description": " 用户痛点：重复操作让人抓狂。每天面对电脑，我们都可能会遇到这样的问题： 登录网站、重复填写表单 抓取数据、整理信息 上传内容或在社交平台手动互动。 "
+  },{
+    "title": "苹果系统MacOS微信双开方法",
+    "url": "/archives/macos-wechat/",
+    "description": "苹果系统MacOS下微信双开的完整方法，无需安装第三方软件。\n"
   },{
     "title": "Cookies提取助手（cookie-extraction）",
     "url": "/archives/cookie-extraction/",
     "description": "Chrome浏览器的Cookies提取助手插件，可以快速提取当前页面的Cookies并上传至服务器或复制到剪贴板。\n"
   },{
+    "title": "测试新主题样式",
+    "url": "/archives/test-theme/",
+    "description": "这是一篇用于测试主题样式的文章，包含各种Markdown元素。\n"
+  },{
+    "title": "抖音自动评论助手",
+    "url": "/archives/douyin-comment/",
+    "description": "抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。支持多种评论模式。\n"
+  },{
+    "title": "初代米家晾衣架 上限位重置",
+    "url": "/archives/xiaomi-liangyijia/",
+    "description": "小米晾衣架高度调节问题？升到顶自动降下来，提示超重但实际没有超重？本文分享解决办法。\n"
+  },{
+    "title": "AI-Native Backend：后端的未来，可能不是被取代，而是被重构",
+    "url": "/archives/ai-native-backend/",
+    "description": "过去二十年，后端架构几乎没变：用户 → 接口 → 业务逻辑 → 数据库。而现在，AI 的崛起正在动摇这一切。\n"
+  },{
     "title": "Hello Halo",
     "url": "/archives/hello-halo/",
     "description": "如果你看到了这一篇文章，那么证明你已经安装成功了，感谢使用 Halo 进行创作，希望能够使用愉快。\n"
   },{
-    "title": "秒杀插件(seckill)",
-    "url": "/archives/seckill/",
-    "description": "Chrome浏览器 抢购、秒杀插件（秒杀助手）可自定义秒杀辅助插件（减少人肉失误）。\n"
+    "title": "插件授权码获取说明",
+    "url": "/archives/getlicense/",
+    "description": " 抖音、小红书自动评论助手授权码获取方式及使用说明\n"
+  },{
+    "title": "Markdown——入门指南：写给第一次接触它的你",
+    "url": "/archives/markdown/",
+    "description": "这篇文章是写给 Markdown 零基础的新手的。不需要你有代码基础，只要你会打字，就可以轻松上手。\n"
+  },{
+    "title": "抖音自动评论助手下载安装使用",
+    "url": "/archives/dy-auto-comment/",
+    "description": "抖音自动评论助手是一款Chrome浏览器扩展程序，能够自动搜索抖音视频并进行评论。\n"
+  },{
+    "title": "未来程序员的角色转变与学习路线图",
+    "url": "/archives/future-programmers/",
+    "description": "随着软件生态逐步走向去中心化和AI助手主导的时代，传统程序员的角色将发生巨大转变。\n"
   },{
     "title": "春天来了，花开了，时光荏苒，未来可期",
     "url": "/archives/spring/",
     "description": "春天是一个充满生机和希望的季节。每年的春分时节，万物复苏，百花齐放。\n"
   },{
-    "title": "测试新主题样式",
-    "url": "/archives/test-theme/",
-    "description": "这是一篇用于测试主题样式的文章，包含各种Markdown元素。\n"
+    "title": "告别繁琐工作，数字化升级让婚恋服务更高效、更成功！",
+    "url": "/archives/hunjie-system/",
+    "description": "在当今快节奏的社会中，婚恋服务行业面临着巨大机遇与挑战。如何高效管理从获客到成功牵手的全流程？\n"
+  },{
+    "title": "n8n下载安装实践体验：自动化工作流的新选择，全栈开发者的效率利器",
+    "url": "/archives/n8n/",
+    "description": "我的技术博客一直是分享技术心得的平台，但博客文章的发布和推广流程比较繁琐。本文分享使用n8n实现博客自动发布的实践经验。\n"
+  },{
+    "title": "用 Cursor 深度打造《SoundJourney》",
+    "url": "/archives/cursor/",
+    "description": "这个项目的起点，其实是源自两个字：好奇。我一直对 AI 编程助手感兴趣，尤其是看到 Cursor 这类工具快速发展。\n"
   },{
     "title": "你好，Hugo世界！",
     "url": "/archives/hello-world/",
     "description": "这是我的第一篇使用Hugo生成的博客文章，记录了从Halo迁移到Hugo的过程。\n"
+  },{
+    "title": "为什么我最终选择了 Halo 搭建技术博客？从反复尝试到正式上线的完整过程",
+    "url": "/archives/blog/",
+    "description": "技术博客是每个开发者沉淀和分享的最佳方式之一。本文分享我选择 Halo 搭建技术博客的完整过程。\n"
+  },{
+    "title": "Clash Party 客户端配置与使用指南：优化网络连接体验",
+    "url": "/archives/clash-party/",
+    "description": "本文将介绍如何使用 Clash Party 客户端配置个人网络连接，提升上网体验。\n"
+  },{
+    "title": "小红书自动评论助手下载安装使用",
+    "url": "/archives/xhs-auto-comment/",
+    "description": "小红书自动评论助手是一款浏览器扩展插件，可帮助用户在小红书平台上自动进行评论互动。\n"
   }]
