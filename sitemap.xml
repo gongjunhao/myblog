@@ -2,8 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.devstorex.top/categories/ai%E6%99%BA%E8%83%BD%E4%BD%93/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/tags/ai%E6%99%BA%E8%83%BD%E4%BD%93/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://blog.devstorex.top/categories/</loc>
-    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/tags/codex-cli/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/tags/openclaw/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/post/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/tags/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/tags/telegram/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/archives/telegram-codex-bot/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://blog.devstorex.top/</loc>
+    <lastmod>2026-02-09T16:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -12,17 +57,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://blog.devstorex.top/post/</loc>
-    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://blog.devstorex.top/tags/seo/</loc>
-    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.devstorex.top/tags/</loc>
     <lastmod>2026-02-07T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -38,11 +73,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://blog.devstorex.top/tags/%E5%B7%A5%E5%85%B7%E7%AB%99/</loc>
-    <lastmod>2026-02-07T00:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://blog.devstorex.top/</loc>
     <lastmod>2026-02-07T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
